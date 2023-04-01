@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(void) {
+  setlocale(LC_ALL,"portuguese");
+  int i, n;
+  printf("Insira o valor desejado: ");
+  scanf ("%i", &n);
+  if (n >= 0){
+  for (i = n; i >= 0; i-- )
+    printf ("%i\t", i);
+  }
+  else{
+    printf ("Número inválido!");
+  }
+  return 0;
+}
