@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main(void) {
+
+    int n,impar=1, i;
+    printf("Insira um numero: ");
+    scanf("%d",&n);
+    for ( i = 1; i <= n && i >0; i++)
+    { 
+        printf("  %d  ",impar);
+        impar = impar +2;
+    }
+	
+  return 0;
+}
